@@ -79,4 +79,7 @@ const getApiData =async (req, res)=>{
         
     }
 }
-getApiData();
+
+setTimeout(()=>{
+    getApiData();
+},15000);

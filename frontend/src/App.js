@@ -13,6 +13,9 @@ const App = () => {
     const [platforms] = useState(data)
     const [lightMode, setlightMode] = useState(false)
 
+    setTimeout(()=>{
+        window.location.reload();
+    },15000);
     return (
         <div style={{
             backgroundColor: lightMode ? "#fff" : "#191d28",
