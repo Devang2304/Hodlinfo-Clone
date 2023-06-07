@@ -1,4 +1,4 @@
-const apiData = require('../model/model');
+import apiData from  '../model/model.js';
 
 const getData = async (req, res) => {
     try {
@@ -10,4 +10,4 @@ const getData = async (req, res) => {
     }
 }
 
-module.exports = getData;
+export default getData;

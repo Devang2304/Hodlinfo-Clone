@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const postSchema = new mongoose.Schema({
     symbol: String,
@@ -11,4 +11,4 @@ const postSchema = new mongoose.Schema({
 
 const apiData= mongoose.model('ApiData',postSchema);
 
-module.exports = apiData;
+export default apiData;

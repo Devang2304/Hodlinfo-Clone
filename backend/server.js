@@ -1,15 +1,16 @@
-const express = require('express');
-const app = express();
-const fetch = require('node-fetch');
-const mongoose = require('mongoose');
-const path = require('path');
-const Routes = require('./routes');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-require("dotenv").config();
-const apiData = require('./model/model');
+import express from 'express';
+import fetch from 'node-fetch';
+import mongoose from 'mongoose';
+import path from 'path';
+import Routes from './routes.js';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import apiData from './model/model.js';
+import dotenv from 'dotenv';
 
+dotenv.config();
 
+const app=express();
 app.use(express.json());
 app.use(bodyParser.json({extended: true}));
 app.use(bodyParser.urlencoded({extended: true}));
