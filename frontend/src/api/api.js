@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:5000';
+const URL = 'https://hodlinfo-clone-3hut.onrender.com/';
 
 export const getData = async () =>{
     try {
